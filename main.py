@@ -187,12 +187,7 @@ def run_scraper():
     try:
         driver = initialize_driver()
         login(driver)
-
-        # --- TODO: Add reservation scraping logic here ---
-        # Example structure:
-        # click_reservations_tab(driver)
         driver.find_element(By.LINK_TEXT, "Reservations").click()
-        # apply_date_filters(driver)
         apply_date_filters(driver, date_from[1], date_to[1])
         download_and_parse_csv(driver, date_from[0], date_to[0])
 
@@ -205,6 +200,5 @@ def run_scraper():
             print("Browser closed.")
 
 
-# --- Run ---
 if __name__ == "__main__":
     run_scraper()
