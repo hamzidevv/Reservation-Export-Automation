@@ -39,22 +39,22 @@ A Python automation tool that logs into a booking dashboard, applies custom date
     cd Reservation-Export-Automation
 
 2. **Install dependencies:**
-3. 
+
     ```bash
     pip install -r requirements.txt
    
-4. **Add your credentials:** Simply rename .env.example to .env and fill in your details:
+3. **Add your credentials:** Simply rename .env.example to .env and fill in your details:
 
     ```bash
     WEBSITE_URL="https://example.com"
     USER_EMAIL="you@example.com"
     USER_PASS="yourpassword"
    
-5. **Download the appropriate version of `chromedriver` for your OS and Chrome version:**
+4. **Download the appropriate version of `chromedriver` for your OS and Chrome version:**
    [Chrome Driver](https://chromedriver.chromium.org/downloads)
    Place the driver in the project directory or your system PATH.
 
-6. **Run the script:**
+5. **Run the script:**
    
     ```bash
     python main.py
